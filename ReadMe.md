@@ -1,5 +1,7 @@
 # AndEver
 
+A minimalistic daemonizer that will run your Node apps forever and ever!
+
 ## Installing
 
 ```sh
