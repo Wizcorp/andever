@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "A minimalistic daemonizer that will run your Node apps forever and ever",
   "main": "./lib/index.js",
-  "bin": "./bin/index.js",
+  "bin": {
+    "andever": "./bin/index.js"
+  },
   "scripts": {
     "test": "eslint ."
   },
@@ -19,5 +21,13 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^1.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wizcorp/andever.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wizcorp/andever/issues"
+  },
+  "homepage": "https://github.com/Wizcorp/andever#readme"
 }

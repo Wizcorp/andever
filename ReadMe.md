@@ -20,6 +20,8 @@ In your package.json, you can now add:
 }
 ```
 
+Now you can control your app's lifecycle by running `npm start`, `npm restart` and `npm stop`.
+
 ## Why another process manager?
 
 Short answer: because all the other ones give me headaches.

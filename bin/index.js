@@ -3,7 +3,7 @@
 'use strict';
 
 const argv = process.argv.slice(2);
-var command = argv[0];
+const command = argv[0];
 const path = argv[1] || process.cwd();
 
 function handleError(error) {
@@ -24,7 +24,7 @@ const andever = require('../lib');
 
 function help() {
 	console.log();
-	console.log('  AndEver usage: andever <path> <command>');
+	console.log('  AndEver usage: andever <command> [path]');
 	console.log();
 	console.log('    path:      the path to your Node.js app');
 	console.log('    command:');
