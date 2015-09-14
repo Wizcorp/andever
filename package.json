@@ -1,0 +1,23 @@
+{
+  "name": "andever",
+  "version": "1.0.0",
+  "description": "A minimalistic daemonizer for your Node apps",
+  "main": "./lib/index.js",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "forever",
+    "andever",
+    "daemon",
+    "process",
+    "manager",
+    "pm"
+  ],
+  "author": "Ron Korving <rkorving@wizcorp.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.4.1"
+  }
+}
