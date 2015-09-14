@@ -37,7 +37,7 @@ function help() {
 
 var fn = help;
 
-if (path) {
+if (path && command) {
 	andever.setPath(path);
 
 	switch (command) {
