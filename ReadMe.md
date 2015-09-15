@@ -33,9 +33,9 @@ own reasons though, and I'll try to sum them up quickly here:
 
 1. A simple process manager should be a very simple solution.
    Right now, PM2 has become so bloated the amount of code and dependencies it adds to your project are probably bigger
-   than your project itself. I just wanna daemonize! PM2 is well maintained, but has become bloatware.
-3. Forever on the other hand is abandonware. The number of unaddressed issues has reached such a point that I using
-   forever makes me lose sleep at night.
+   than your project itself. I just wanna daemonize my app! PM2 is well maintained, but has become bloatware.
+3. Forever on the other hand is abandonware. The number of unaddressed issues has reached such a point that using
+   forever would make me lose sleep at night.
 3. Forever just never seems to work for me. The fact that I can run "forever start myapp" multiple times and have it not
    complain is a major frustration for me.
 
@@ -53,14 +53,21 @@ app. Nothing fancy. Just a nice and simple solution.
 ## Usage
 
 ```
-AndEver usage: andever <command> [path]
+AndEver usage: andever <command> [path] [options]
+
+  path           the path to your Node.js app
 
   command:
-	start:   daemonizes the app
-	restart: restarts the daemonized app
-	stop:    stops the daemonized app
-	status:  outputs the status of the running app (exit codes: 0 = running, 1 = not running)
-  path:      the path to your Node.js app (default: the current working directory)
+	start        daemonizes the app
+	restart      restarts the daemonized app
+	stop         stops the daemonized app
+	status       outputs the status of the running app (exit codes: 0 = running, 1 = not running)
+
+  options:
+	--out=path   file path to write the app's stdout to (applies to "start" and "restart")
+	--err=path   file path to write the app's stderr to (applies to "start" and "restart")
+	--append     will append to log files instead of truncating (applies to "start" and "restart")
+	--pid=path   file path to write the PID file to (applies to all commands)
 ```
 
 ## Behavior
