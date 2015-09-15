@@ -1,6 +1,6 @@
 {
   "name": "andever",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A minimalistic daemonizer that will run your Node apps forever and ever",
   "main": "./lib/index.js",
   "bin": {
