@@ -20,7 +20,7 @@
   "author": "Ron Korving <rkorving@wizcorp.jp>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.4.1"
+    "eslint": "^1.4.3"
   },
   "repository": {
     "type": "git",
